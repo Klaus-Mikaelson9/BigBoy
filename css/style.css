@@ -64,17 +64,6 @@ body {
 .header__logo {
     margin: 0 41px 0 0;
 }
-.header__burger-icon {
-    max-height: 23px;
-}
-
-.header__person-icon {
-    max-height: 29px;
-}
-
-.header__basket-icon {
-    max-height: 27px;
-}
 
 .header__link {
     margin: 0 0 0 33px;
