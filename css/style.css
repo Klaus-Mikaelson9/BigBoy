@@ -242,6 +242,14 @@ body {
     text-align: center;
 }
 
+.button:hover {
+    color: #FFFFFF;
+}
+
+.button__main:hover{
+    background: #F16D7F;
+}
+
 .advantage {
     background-color: var(--advantage-bkg);
     max-height: 341px;
@@ -283,4 +291,89 @@ body {
     line-height: 17px;
     text-align: center;
     max-width: 360px;
+}
+
+.footer__fon {
+    background-image: url(../img/footer.jpg);
+    min-height: 448px;
+    background-color: #DAD3D3;
+    min-height: 79px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer__list {
+    padding-top: 87px;
+    text-align: center;
+}
+
+.footer__item-img {
+    max-height: 96px;
+    max-width: 96px;
+    margin-bottom: 30px;
+}
+
+.footer__item-text {
+    max-width: 359px;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    margin-bottom: 127px;
+}
+
+.footer__form {
+    text-align: center;
+    padding-top: 150px;
+}
+
+.footer__copyright {
+    background-image: url(../img/copyright.jpg);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.footer__copyright-text {
+    font-size: 16px;
+    line-height: 19px;
+    color: var(--advantage-color);
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+
+.footer__copyright-list {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 23px;
+}
+
+.footer__copyright-item {
+    padding-right: 5px;
+}
+
+.footer__item-button {
+    margin-top: 25px;
+    padding: 0;
+}
+
+.footer__item-icon {
+    padding-top: 3px; 
+}
+
+.footer__item-ref {
+    width: 32px;
+    height: 32px;
+    background: white;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__item-ref:hover {
+    fill: #FFFFFF;
+}
+
+.footer__item-ref:hover {
+    background: #F16D7F;
 }
