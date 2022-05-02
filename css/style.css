@@ -12,6 +12,7 @@
     --border-bkg: #ffffff;
     --advantage-bkg: #222224;
     --advantage-color: #FBFBFB;
+    --icon-white: #E8E8E8;
 } 
 
 body {
@@ -61,12 +62,35 @@ body {
     background-color: transparent;
 }
 
+.header__burger:hover .header__icon,
+.header__link:hover .header__icon,
+.header__burger:focus .header__icon,
+.header__link:focus .header__icon  {
+    fill: var(--pink-color);
+    cursor: pointer;
+}
+
+.header__burger:active .header__icon,
+.header__link:active .header__icon {
+    opacity: 0.7;
+}
+
 .header__logo {
     margin: 0 41px 0 0;
 }
 
 .header__link {
     margin: 0 0 0 33px;
+}
+
+.header__link-span {
+    color: yellow;
+    z-index: 1;
+    position: absolute;
+}
+
+.header__icon {
+    fill: var(--icon-white);
 }
 
 .header__nav {
@@ -191,12 +215,13 @@ body {
 .products__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     margin-bottom: 49px;
 }
 
 .products__item {
-    padding: 0 30px 30px 0;
+    padding-bottom: 30px;
+    width: 360px;
 }
 
 .products__item-img {
@@ -222,6 +247,45 @@ body {
 .products__item-price {
     padding-top: 18px;
     color: var(--price-color);
+}
+
+.products__item-img-wrp {
+    position: relative;
+}
+
+.products__item-img-wrp::before {
+    content: '';
+    background-color: #222222;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    opacity: 0.6;
+    display: none;
+}
+
+.products__item-add-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    display: none;
+    background-color: #4E4544;
+    border-color: white;
+    color: white;
+}
+
+.basket__main-text {
+}
+
+.basket__main {
+    height: 23px;
+}
+
+.products__item:hover .products__item-img-wrp::before,
+.products__item:hover .products__item-add-btn {
+    display: block;
 }
 
 .button__main {
@@ -376,4 +440,43 @@ body {
 
 .footer__item-ref:hover {
     background: #F16D7F;
+}
+
+.footer__form-title {
+    font-family: 'Lato';
+    font-weight: 700;
+    font-size: 24px;
+    padding-bottom: 10px
+}
+
+.footer__form-text {
+    font-family: 'Lato';
+}
+
+.footer__form-subscribe {
+    margin-top: 32px;
+}
+
+.footer__form-email {
+    padding: 7px 64px 7px 22px;
+    border-radius: 10px;
+}
+
+.subscribe__btn {
+    background-color: var(--button-color);
+    padding: 7px 7px 7px 7px;
+    border-radius: 10px;
+    color: white;
+}
+
+input::placeholder {
+    color: #222224;
+}
+
+input:focus {
+    color: blue;
+}
+
+button:active {
+    color: blue;
 }
