@@ -276,9 +276,6 @@ body {
     color: white;
 }
 
-.basket__main-text {
-}
-
 .basket__main {
     height: 23px;
 }
@@ -479,4 +476,146 @@ input:focus {
 
 button:active {
     color: blue;
+}
+
+.registration {
+    background: #F8F3F4;
+    height: 148px;
+    display: flex;
+    align-items: center;
+}
+
+.reg {
+    display: flex;
+}
+
+.registration__title {
+    color: #F16D7F;
+    font-size: 24px;
+    line-height: 29px;
+    padding-left: 230px;
+}
+
+.regstration__form-title {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+    margin-top: 64px;
+    padding-left: 230px;
+}
+
+.regstration__form-input {
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+    margin-left: 230px;
+    height: 45px;
+    width: 360px;
+    background-color: #FFFFFF;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    margin-top: 20px;
+    border-color: #B1B1B1;
+    margin-top: 21px;
+}
+
+.fbc {
+    margin-left: 230px;
+}
+
+.regstration__form-radio {
+    margin-top: 32px;
+    box-sizing: border-box
+}
+
+.regstration__form-radio-title {
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+    color: #000000;
+}
+
+.regstration__form-text {
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+    width: 359px;
+    height: 32px;
+    margin-top: 16px;
+    margin-left: 230px;
+    margin-bottom: 39px;
+}
+
+.lastname {
+    margin-top: 33px;
+}
+
+.decoration {
+    margin-left: 80px;
+}
+
+.decoration__title {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    margin-top: 64px;
+}
+
+.decoration__text {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    width: 652px;
+    height: 58px;
+    margin-top: 22px;
+}
+
+.list {
+    margin-top: 21px;
+    list-style: none;
+}
+
+.item {
+    padding-top: 16px;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    position: relative;
+}
+
+.item:before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    background: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    top: 5px;
+    left: -25px;
+    background-image: url(../img/gala.svg);
+    background-size: 15px 15px;
+}
+
+.registration__button {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    background-color: var(--button-color);
+    display: flex;
+    align-items: center;
+    padding-left: 29px;
+    height: 50px;
+    margin-left: 230px;
+    margin-bottom: 96px;
+}
+
+.button__img {
+    padding-left: 20px;
+    padding-right: 20px;
 }
